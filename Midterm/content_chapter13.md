@@ -1,4 +1,4 @@
-# Cách thiết kế trực quan hiệu quả
+**Cách thiết kế trực quan hiệu quả**
 
 Mục tiêu của chương này là cung cấp một số **cách để thiết kế hình ảnh trực quan thành công** vì nó là hình ảnh truyền tải thông tin mong muốn đến đối tượng mục tiêu một cách hiệu quả, chính xác. Sẽ có vô số phương pháp khả thi để ánh xạ các thành phần dữ liệu thành các ảnh. Tương tự cũng có rất nhiều công cụ tương tác có thể được cung cấp cho người xem. Việc lựa chọn các kết hợp kỹ thuật hiệu quả nhất không phải là một quá trình đơn giản.
 
@@ -11,7 +11,7 @@ Một hình ảnh trực quan có thể không hiệu quả vì một số lý d
 
 Chương này trước tiên trình bày các cân nhắc về [1] **cách thiết kế cho các thành phần mà tác giả cảm thấy cần thiết cho một hình ảnh trực quan** tốt. Sau đó, khám phá [2] **vấn đề thường gặp trong hình ảnh trực quan** và **một số kỹ thuật để tránh** những vấn đề này.
 
-## Các bước thiết kế trực quan
+# Các bước thiết kế trực quan
 
 Việc tạo hình ảnh hóa bao gồm quyết định cách **ánh xạ các trường dữ liệu thành các hình ảnh**, lựa chọn và triển khai các phương pháp để **sửa đổi chế độ xem** và **chọn lượng dữ liệu cần thiết cho trực quan hóa**.
 
@@ -19,7 +19,7 @@ Việc tạo hình ảnh hóa bao gồm quyết định cách **ánh xạ các t
 
 Cuối cùng, ít hữu hình hơn, cần cân nhắc đến **tính thẩm mỹ tổng thể** của màn hình **hiển thị kết quả**. Các phần nhỏ được trình bày sau đây sẽ làm rõ hơn các bước trong quy trình đã đề cập.
 
-### Bước 1. Ánh xạ dữ liệu sang biểu diễn trực quan
+## Bước 1. Ánh xạ dữ liệu sang biểu diễn trực quan
 
 Để tạo ra hình ảnh trực quan hiệu quả, cần hiểu rõ **ngữ nghĩa của dữ liệu và bối cảnh của người xem**. Việc **chọn cách hiển thị phù hợp với tư duy của người xem** sẽ giúp họ **dễ dàng hiểu hình ảnh hơn**. Ngoài ra, nhà thiết kế **nên nhất quán để tránh sự nhầm lẫn**. Ánh xạ dữ liệu trực quan tốt sẽ giúp người xem diễn giải nhanh hơn vì không phải mất thời gian để hiểu.
 
@@ -41,7 +41,7 @@ Khi **chọn ánh xạ**, cần **xem xét tính tương thích giữa thang d�
 
 Tuy nhiên, **đôi khi cũng thú vị khi kiểm tra dữ liệu bằng các ánh xạ không trực quan**, vì hình ảnh kết quả có thể tiết lộ một thuộc tính thú vị trong dữ liệu. Ví dụ, ánh xạ thời gian để tô màu dọc theo một đường vạch có thể tiết lộ các biến thể về tốc độ hạt mà nếu không thì có thể khó phát hiện. Do đó, **một nguyên tắc chung** hữu ích là **thiết lập các ánh xạ mặc định dựa trên lựa chọn trực quan nhất theo người xem thông thường**, nhưng, đặc biệt đối với các tác vụ khám phá, cho phép người xem tùy chỉnh nhiều ánh xạ trực quan khác nhau.
 
-### Bước 2. Chọn và sửa đổi chế độ xem cho phù hợp
+## Bước 2. Chọn và sửa đổi chế độ xem cho phù hợp
 
 Ngoại trừ các tập dữ liệu khá đơn giản, **một chế độ xem hiếm khi đủ để truyền tải tất cả thông tin** chứa trong dữ liệu. Như vậy điều quan trọng là **phải có thể dự đoán các loại chế độ xem** mà được sử dụng nhiều nhất bởi người xem thông thường và sau đó **cung cấp trực quan cách điều khiển cài đặt, tùy chỉnh các dạng xem mà người xem cảm thấy phù hợp**.
 
@@ -65,7 +65,7 @@ Sau đây là ví dụ **một số hành động** của người xem để **s
 - Trong mọi trường hợp, điều cần thiết là các **thao tác xem phải đơn giản, dễ nhớ** cho người xem và **cung cấp những thông tin phù hợp, chính xác** cho nhiệm vụ.
 - Nếu có thể, **thao tác sửa đổi chế độ xem trực tiếp** (trực tiếp có thể thay đổi chế độ xem bằng các thao tác đơn giản: click, gõ phím, ...) **thường được ưa thích**.
 
-### Bước 3. Xác định mật độ thông tin phù hợp
+## Bước 3. Xác định mật độ thông tin phù hợp
 
 Khi thiết kế trực quan hóa, quan trọng là **xác định lượng thông tin cần hiển thị**. Có hai hệ quả:
 
@@ -82,7 +82,7 @@ Khi thiết kế trực quan hóa, quan trọng là **xác định lượng thô
 
 Những giải pháp này giúp tối ưu hóa trực quan hóa, đảm bảo rằng người xem dễ dàng hiểu và tương tác với thông tin.
 
-### Bước 4. Thêm vào các từ khóa, nhãn và chú thích
+## Bước 4. Thêm vào các từ khóa, nhãn và chú thích
 
 Một vấn đề phổ biến trong trực quan hóa là **thiếu thông tin hỗ trợ để người xem có thể hiểu rõ và chính xác** thông tin truyền tải. Để giải quyết vấn đề đó, chúng ta **cần cung cấp các yếu tố sau**:
 
@@ -92,7 +92,7 @@ Một vấn đề phổ biến trong trực quan hóa là **thiếu thông tin h
 + **Chú giải ký hiệu**: Cung cấp **từ khóa cho các ký hiệu**, nằm ở viền hoặc trong một widget riêng.
 + **Giải thích màu sắc**: **Ý nghĩa của màu sắc** sử dụng **trong phép trực quan**, như thanh màu có nhãn.
 
-### Bước 5. Điều chỉnh màu sắc được sử dụng cho phù hợp
+## Bước 5. Điều chỉnh màu sắc được sử dụng cho phù hợp
 
 **Màu sắc thường bị lạm dụng** trong các biểu đồ, **dẫn đến sự nhầm lẫn hoặc diễn giải sai**.
 
@@ -108,7 +108,7 @@ Dưới đây là **hướng dẫn sử dụng màu sắc hiệu quả** trong b
 
 + Ngoài ra, khi tạo bảng màu cho dữ liệu số, có thể **thay đổi sắc độ** (hue) và **độ sáng** (lightness) để giúp dễ phân biệt các mục (entry) với ít máu sắc nhất.
 
-### Bước 6. Bước cuối cùng, đảm bảo thẩm mỹ
+## Bước 6. Bước cuối cùng, đảm bảo thẩm mỹ
 
 Đây là bước chúng ta thực hiện **cân bằng giữa chức năng và hình thức**. Một biểu đồ tốt nên **vừa cung cấp thông tin vừa hấp dẫn về mặt hình ảnh**.
 
@@ -118,7 +118,7 @@ Dưới đây là **hướng dẫn nâng cao tính thẩm mỹ**:
 + **Cân bằng**: Sử dụng **không gian màn hình hợp lý**. Đặt các **thành phần chính ở trung tâm** và **tránh nổi bật đường viền** hoặc **khu vực ít quan trọng**.
 + **Đơn giản**: Giữ **lượng thông tin thể hiện trực quan ở mức vừa đủ bằng những thiết kế tối giản**. Nên dùng những hình ảnh đơn giản và tránh dùng các thiết kế phức tạp nếu những thiết kế đơn giản hơn có thể truyền đạt thông điệp tương tự. Một kỹ thuật hữu ích là loại bỏ từng yếu tố và xem xét liệu việc mất thông tin có chấp nhận được không. **Ghi nhớ "tối giản" - đơn giản mà vẫn đạt yêu cầu đặt ra**.
 
-## Các lỗi sai hay gặp khi thiết kế trực quan
+# Các lỗi sai hay gặp khi thiết kế trực quan
 
 Ngay cả khi **tuân thủ quy trình các bước** thiết kế trực quan khoa học nêu trên, **vẫn có thể có vài lỗi sai**, vấn đề gặp phải.
 
@@ -131,13 +131,13 @@ Những vấn đề này do nhiều lý do:
  
 Trong tất cả các trường hợp này, vẫn có thể thực hiện các bước để cải thiện chất lượng và tính "trung thực" của hình ảnh trực quan. Sau đây chúng ta sẽ bắt đầu.
 
-### Hình ảnh gây hiểu lầm
+## Hình ảnh gây hiểu lầm
 
 Một trong những **quy tắc quan trọng** nhất của trực quan hóa là nó phải **mô tả chính xác dữ liệu**. Tuy nhiên, trong suốt lịch sử, có nhiều ví dụ về việc trực quan hóa dữ liệu bị bóp méo được sử dụng để thay đổi quan điểm và lừa dối khán giả. Những "ảnh giả" này có thể xuất hiện ở khắp mọi nơi, từ các tạp chí danh tiếng cho đến các danh mục của công ty.
 
 Trong phần này, chúng ta sẽ xác định **một số chiến lược phổ biến** trong việc **tạo ra các hình ảnh trực quan gây hiểu lầm**, **không phải để** người đọc **áp dụng**, **mà là để tránh**!
 
-#### **Làm sạch dữ liệu**
+## Làm sạch dữ liệu
 
 Dữ liệu thô thường có nhiều yếu tố "lộn xộn", chẳng hạn như những điểm dữ liệu bất thường (outliers) hoặc lỗi thu thập dữ liệu. **Trong quá trình làm trực quan**, người làm trực quan hóa có thể **bị cám dỗ loại bỏ những điểm dữ liệu không hợp lý** để giúp hình ảnh trông dễ nhìn hơn hoặc để loại bỏ các dữ liệu không phù hợp với quan điểm mà họ muốn thể hiện.
 
@@ -151,7 +151,7 @@ Loại bỏ các điểm ngoại lệ là một cách phổ biến trong trườ
 
 **Giải pháp**: **Trừ khi có bằng chứng** rằng các điểm ngoại lệ là kết quả của lỗi kỹ thuật, **chúng không nên bị loại bỏ một cách tùy tiện**. Đồng thời, người thiết kế **cần cung cấp** cho người xem tùy chọn **hiển thị hoặc ẩn** những **điểm ngoại lệ** này để đảm bảo tính minh bạch của dữ liệu.
 
-#### **Tỷ lệ không cân đối**
+## Tỷ lệ không cân đối
 
 Tỷ lệ là một công cụ mạnh mẽ trong hình ảnh trực quan, vì việc **lựa chọn kỹ lưỡng các yếu tố tỷ lệ có thể giúp làm lộ ra các mẫu và cấu trúc không thể nhìn thấy ở các góc nhìn không được tỷ lệ hóa**.
 
@@ -165,7 +165,7 @@ Hình 13.16 Vis Lies: Sự bóp méo kích thước do phối cảnh (Phối c�
 
 **Giải pháp**: Cung cấp **các công cụ như đường kẻ**, **điểm tham chiếu**, hoặc **chỉ báo điểm gốc** để người xem có thể hiểu rõ hơn về **cách dữ liệu được tỷ lệ hóa** và có thể **so sánh chính xác hơn**.
 
-#### **Biến dạng phạm vi**
+## Biến dạng phạm vi
 
 **Người xem thường có kỳ vọng về phạm vi của một chiều dữ liệu nhất định**.
 
@@ -173,7 +173,7 @@ Do con người có khả năng phán đoán tương đối rất mạnh mẽ, t
 
 **Giải pháp**: Người thiết kế **cần minh bạch với người xem về điểm gốc của biểu đồ** và **lý do thay đổi nếu có**. Việc cho phép người xem **tùy chọn điều chỉnh điểm gốc cũng là một cách** giúp họ **không bị lừa dối bởi phạm vi dữ liệu**.
 
-#### **Lạm dụng tính đa chiều**
+## **Lạm dụng tính đa chiều**
 
 **Hình ảnh trực quan càng nhiều chiều thì càng dễ gây hiểu lầm**. Điều này là do con người gặp nhiều khó khăn hơn khi đánh giá thể tích (3 chiều) so với diện tích (2 chiều), và diện tích lại khó hơn chiều dài (1 chiều).
 
@@ -182,13 +182,13 @@ Ví dụ: Nếu một giá trị vô hướng (scalar) được đánh giá thô
 **Giải pháp**: Việc **đơn giản hóa hình ảnh trực quan** sẽ giúp người xem dễ dàng nắm bắt thông tin hơn. Chỉ nên sử dụng nhiều chiều dữ liệu khi thật sự cần thiết và đảm bảo rằng người xem có thể hiểu rõ ý nghĩa của chúng.
 
 
-### Hình ảnh vô nghĩa
+## Hình ảnh vô nghĩa
 
 Hình ảnh trực quan được thiết kế để truyền tải thông tin, và điều quan trọng là **thông tin đó phải có ý nghĩa**. 
 
 Dưới đây là các cách thường được dùng để "đánh lừa" tư duy của chúng ta bằng cách gây hiểu nhầm tương quan các chiều (biến) của dữ liệu.
 
-#### Kết hợp các quan hệ ngẫu nhiên như là một quan hệ nhân quả có tương quan
+## Kết hợp các quan hệ ngẫu nhiên như là một quan hệ nhân quả có tương quan
 
 Các hình ảnh trực quan thường được tạo ra bằng cách kết hợp các tập dữ liệu từ nhiều nguồn khác nhau. Tuy nhiên, **việc kết hợp các thành phần không liên quan vào một hình ảnh duy nhất rất dễ xảy ra**, và từ đó có thể nhận thấy **những gì dường như là một cấu trúc, có liên quan nhưng thực tế sai bét, vô nghĩa**.
 
@@ -199,20 +199,20 @@ Trong trường hợp này, **mối quan hệ ngẫu nhiên bị nhầm lẫn v�
 
 Một trong những vấn đề được tìm thấy trong các quy trình nhận diện mẫu phân tích dữ liệu là **những mối quan hệ không liên quan thường được phát hiện và báo cáo**, **sau đó phải được loại bỏ bởi các chuyên gia trong lĩnh vực**. 
 
-#### So sánh trong phạm vi không gian và thời gian không tương quan
+## So sánh trong phạm vi không gian và thời gian không tương quan
 
 **Một yếu tố khác** cần được xem xét là **sự tương thích giữa phạm vi thời gian và không gian** của dữ liệu khi so sánh. Ví dụ, không nên so sánh doanh số bán hàng của một sản phẩm cụ thể trong một năm ở một khu vực nhất định của đất nước với doanh số bán hàng của cùng sản phẩm đó ở một khu vực và năm khác, trừ khi có giả thuyết về sự thay đổi trong xu hướng quan tâm đến sản phẩm đó.
 
-#### So sánh trong phạm vi đơn vị không chuẩn hóa
+## So sánh trong phạm vi đơn vị không chuẩn hóa
 
 **Sự tương thích về đơn vị** cũng cần được kiểm tra khi tạo tập dữ liệu cho hình ảnh trực quan. Ví dụ, các sản phẩm thực phẩm được đo bằng giá theo thể tích thường bị trộn lẫn với những sản phẩm được đo bằng giá theo trọng lượng. Một **hình ảnh trực quan hiệu quả có thể chuẩn hóa cả hai đơn vị khác nhau về chung 1 thang đo** về giá theo khẩu phần ăn.
 
-#### Gán thứ tự cho các đối tượng dữ liệu không có quan hệ thứ tự
+## Gán thứ tự cho các đối tượng dữ liệu không có quan hệ thứ tự
 
 **Dữ liệu phân loại** là loại dữ liệu **không có thứ tự tự nhiên**, chẳng hạn như tên công ty hoặc loại sản phẩm. Khi các dữ liệu này được **biểu diễn trên một đồ thị với vị trí cụ thể**, có thể tạo ra cảm giác rằng **chúng có thứ tự hoặc có thể so sánh như dữ liệu liên tục**. Ví dụ: Giả sử bạn có một danh sách các công ty và bạn muốn biểu diễn chúng trên một đồ thị. Nếu bạn gán mỗi công ty một vị trí trên trục x của đồ thị và cố gắng vẽ một đường thẳng hoặc đường cong qua các điểm này, bạn đang áp dụng một phép toán liên tục (vẽ đường) cho dữ liệu phân loại (tên công ty).
 Điểm mấu chốt là **cần có sự cân nhắc về mặt ngữ nghĩa của hình ảnh trực quan để đảm bảo rằng nó có ý nghĩa logic**.
 
-### Mất dữ liệu
+## Mất dữ liệu
 
 "**Chart junk**" là thuật ngữ được Tufte sử dụng để chỉ các **yếu tố đồ họa bổ sung không cần thiết**, làm cho hình ảnh trở nên phức tạp hơn mà **không hỗ trợ việc diễn giải dữ liệu**. Những yếu tố này có thể gây rối mắt, làm người xem khó tập trung vào dữ liệu chính.
 
@@ -226,15 +226,15 @@ Một quy tắc tốt là cung cấp đủ **công cụ để đáp ứng nhu c�
 
 <!-- Hình 13.19 (a)Dữ liệu với đường cong; (b)Chỉ đường cong -->
 
-### Dữ liệu thô so với dữ liệu suy diễn
+## Dữ liệu thô so với dữ liệu suy diễn
 
 Các cách phổ biến là thay thế hoàn toàn dữ liệu thô sẵn có bằng cách:
 
-#### Áp đặt một mô hình khớp suy diễn
+## Áp đặt một mô hình khớp suy diễn
 
 Một hình thức phổ biến trong hình ảnh trực quan là tính toán **một mô hình phân tích của dữ liệu** bằng cách sử dụng **phép khớp đường cong hoặc bề mặt** để đạt được **kết quả có tính thẩm mỹ** hơn. Tuy nhiên, đây là **một hình thức bóp méo sự thật** và có thể dẫn đến **những giả định và kết luận sai lầm** từ phía người quan sát. Trong một số hình ảnh trực quan, thường loại bỏ tất cả dữ liệu thô và chỉ hiển thị kết quả xấp xỉ mượt mà từ dữ liệu đó. Điều này buộc người xem phải tin rằng phép xấp xỉ là sự phản ánh chính xác của dữ liệu, nhưng điều này không phải lúc nào cũng đúng khi nhà thiết kế áp dụng các thuật toán khớp số liệu một cách mù quáng. Tốt nhất là **nên hiển thị cả dữ liệu thô và mô hình đã khớp trước**, đồng thời **cho phép người xem** giảm mức độ hiển thị hoặc **lọc bỏ một trong hai tùy theo yêu cầu**.
 
-#### Áp đặt 1 tập được lấy lại mẫu
+## Áp đặt 1 tập được lấy lại mẫu
 
 Một hình thức khác của việc làm sạch dữ liệu là quá trình **lấy mẫu lại (resampling)**, trong đó dữ liệu thô, được định vị trên lưới thưa thớt hoặc ngẫu nhiên, được sử dụng để tạo ra dữ liệu dày hơn hoặc trên lưới có khoảng cách đều đặn. Điều này có thể **mang lại một hình ảnh trực quan phong phú hơn**, **gần với mẫu liên tục**, nhưng nó cũng đánh lừa người xem **khiến họ tin rằng tập dữ liệu lớn hơn nhiều so với thực tế**. **Mật độ lấy mẫu lại càng cao**, người xem **càng dễ hiểu sai dữ liệu**, trừ khi hiện tượng đang quan sát có ít biến động.
 
@@ -252,7 +252,7 @@ Hình 13.21 Sự khác biệt trong cách lấy mẫu và nội suy từ cùng m
 
 Trong một số lĩnh vực, chẳng hạn như chẩn đoán hình ảnh (radiology), các nhà phân tích kiên quyết **phản đối bất kỳ dạng làm mịn hoặc lọc dữ liệu nào**, vì có **nguy cơ tín hiệu quan trọng trong dữ liệu có thể bị loại bỏ dưới dạng nhiễu**. Do đó, **nên cung cấp các chế độ hiển thị dữ liệu thô trước** khi tạo ra các phiên bản mới, cho phép người xem quyết định liệu sự dẫn xuất sang dữ liệu mới có phản ánh chính xác dữ liệu ban đầu hay không.
 
-### Phán đoán Tuyệt đối so với Phán đoán Tương đối
+## Phán đoán Tuyệt đối so với Phán đoán Tương đối
 
 Con người có khả năng tương đối **hạn chế trong việc** thực hiện các **phán đoán tuyệt đối** về **kích thích thị giác**.
 
@@ -268,7 +268,7 @@ Hệ quả của điều này là những **phép trực quan phụ thuộc** qu
 
 <!-- Hình 13.22 Một số ví dụ về phán đoán tuyệt đối và tương đối -->
 
-## Tổng kết & Các ứng dụng thực tế
+# Tổng kết & Các ứng dụng thực tế
 
 Như vậy, trong chương này, một số quy tắc thiết kế cho việc tạo ra hình ảnh trực quan hiệu quả đã được trình bày, chúng bao gồm **quy trình đảm bảo phù hợp các yếu tố**:
 
