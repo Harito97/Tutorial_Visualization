@@ -20,5 +20,3 @@ Hãy nhìn lại vào bảng tổng kết trước đó, tuy nhiên tôi đã th
 Khi đã hiểu rõ về dữ liệu, liệu bạn có chọn 1 ánh xạ ngớ ngẩn nào đó để thể hiện sai ý nghĩa dữ liệu không?
 Liệu khi đã hiểu rõ tính chất của dữ liệu, bạn có đặt ra 1 chế độ xem không phù hợp với tính chất dữ liệu không?
 Liệu khi đã biết rõ về dữ liệu, biết rõ về thứ cần quan tâm, xác dịnh rõ mục đích biểu đạt, liệu bạn có đến mức xác định được cần vẽ thêm vào cái gì hay để cho biểu đồ có quá nhiều thông tin nhiễu làm lệch đi mục đích truyền tải ban đầu không?
-
- 
